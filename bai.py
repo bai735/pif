@@ -1,6 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+import matplotlib
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
+# 配置中文字体
+matplotlib.rcParams['font.sans-serif'] = ['WenQuanYi Zen Hei', 'SimHei', 'DejaVu Sans']
+matplotlib.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
 # --- 系统参数 ---
 K = 1.0          # 增益
 tau = 10.0       # 时间常数（秒）
